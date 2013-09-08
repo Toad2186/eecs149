@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 SEP 2013 13:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 SEP 2013 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -157,60 +157,60 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 39.
 
-[2] <./pictures/lab1_6e.PNG, id=16, 287.57437pt x 261.22594pt>
-File: ./pictures/lab1_6e.PNG Graphic file (type png)
+[2] <../lab1_data/lab1_6e.PNG, id=16, 287.57437pt x 261.22594pt>
+File: ../lab1_data/lab1_6e.PNG Graphic file (type png)
 
-<use ./pictures/lab1_6e.PNG>
-Package pdftex.def Info: ./pictures/lab1_6e.PNG used on input line 71.
+<use ../lab1_data/lab1_6e.PNG>
+Package pdftex.def Info: ../lab1_data/lab1_6e.PNG used on input line 71.
 (pdftex.def)             Requested size: 287.57367pt x 261.22528pt.
  [3]
-<./pictures/lab1_7a.PNG, id=23, 307.1475pt x 117.43875pt>
-File: ./pictures/lab1_7a.PNG Graphic file (type png)
+<../lab1_data/lab1_7a.PNG, id=23, 307.1475pt x 117.43875pt>
+File: ../lab1_data/lab1_7a.PNG Graphic file (type png)
 
-<use ./pictures/lab1_7a.PNG>
-Package pdftex.def Info: ./pictures/lab1_7a.PNG used on input line 78.
+<use ../lab1_data/lab1_7a.PNG>
+Package pdftex.def Info: ../lab1_data/lab1_7a.PNG used on input line 78.
 (pdftex.def)             Requested size: 307.14674pt x 117.43845pt.
 
-<./pictures/lab1_7b.PNG, id=24, 392.96812pt x 191.9672pt>
-File: ./pictures/lab1_7b.PNG Graphic file (type png)
+<../lab1_data/lab1_7b.PNG, id=24, 392.96812pt x 191.9672pt>
+File: ../lab1_data/lab1_7b.PNG Graphic file (type png)
 
-<use ./pictures/lab1_7b.PNG>
-Package pdftex.def Info: ./pictures/lab1_7b.PNG used on input line 79.
+<use ../lab1_data/lab1_7b.PNG>
+Package pdftex.def Info: ../lab1_data/lab1_7b.PNG used on input line 79.
 (pdftex.def)             Requested size: 392.96715pt x 191.96672pt.
 
 Overfull \hbox (47.96715pt too wide) in paragraph at lines 78--80
 [] 
  []
 
-[4 <./pictures/lab1_6e.PNG> <./pictures/lab1_7a.PNG>]
-<./pictures/lab1_8a.PNG, id=30, 288.3272pt x 82.05656pt>
-File: ./pictures/lab1_8a.PNG Graphic file (type png)
+[4 <../lab1_data/lab1_6e.PNG> <../lab1_data/lab1_7a.PNG>]
+<../lab1_data/lab1_8a.PNG, id=30, 288.3272pt x 82.05656pt>
+File: ../lab1_data/lab1_8a.PNG Graphic file (type png)
 
-<use ./pictures/lab1_8a.PNG>
-Package pdftex.def Info: ./pictures/lab1_8a.PNG used on input line 92.
+<use ../lab1_data/lab1_8a.PNG>
+Package pdftex.def Info: ../lab1_data/lab1_8a.PNG used on input line 92.
 (pdftex.def)             Requested size: 288.32648pt x 82.05635pt.
- [5 <./pictures/lab1_7b.PNG> <./pictures/lab1_8a.PNG>] [6] (./WriteUp1.aux) ) 
+ [5 <../lab1_data/lab1_7b.PNG> <../lab1_data/lab1_8a.PNG>] [6] (./WriteUp1.aux)
+ ) 
 Here is how much of TeX's memory you used:
  1508 strings out of 493488
- 21886 string characters out of 3141326
+ 21920 string characters out of 3141326
  76552 words of memory out of 3000000
  4820 multiletter control sequences out of 15000+200000
  7895 words of font info for 28 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,6n,23p,643b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
-</
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
-ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on WriteUp1.pdf (6 pages, 161446 bytes).
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on WriteUp1.pdf (6 pages, 161447 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream

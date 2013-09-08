@@ -68,15 +68,15 @@
     \subsubsection*{d Why is it better to perform calibration at runtime, rather than hard-coding values for the sensitivity and bias of the sensor?}
       The problem with hardcoding values for bias and sensitivity is that you are assuming that the WiiMote will always produce the same uncallibrated values for x, y, and z, which is not a stable assumption. The uncallibrated values can be dependent on temperature, which WiiMote you are using, and age of the WiiMote. 
     \subsubsection*{e Provide the relevant MathScript code and screenshots of changes (if any) to the block diagram}
-    \includegraphics{./pictures/lab1_6e.PNG} 
+    \includegraphics{../lab1_data/lab1_6e.PNG} 
   \subsection*{7 Measure Pitch and Roll}
     \subsubsection*{a What equations did you use to calculate pitch and roll?}
       We used these two equations to calculate pitch and roll:
         \[pitch = \arctan(\frac{y}{\sqrt{x^2 + z^3}})\]
         \[roll = \arctan(\frac{-x}{z})\]
     \subsubsection*{b Provide the relevant MathScript code and screenshots of changes (if any) to the block diagram.}
-    \includegraphics{./pictures/lab1_7a.PNG} \\[1em] 
-    \includegraphics{./pictures/lab1_7b.PNG} 
+    \includegraphics{../lab1_data/lab1_7a.PNG} \\[1em] 
+    \includegraphics{../lab1_data/lab1_7b.PNG} 
   \subsection*{8 Filter the accelerometer signal}
     \subsubsection*{a Describe your filter, and include an equation for its impulse response, frequency response, or its output as a fraction of input.}
       We used a averaging low pass filter of the form:
@@ -89,7 +89,7 @@
       And our frequency response was:
         \[H(z) = \frac{q}{1 - (1 - q)*z^{-1}}\]
     \subsubsection*{b Provide the relevant MathScript codd and screenshots of changes (if any) to the block diagram}
-      \includegraphics{./pictures/lab1_8a.PNG} 
+      \includegraphics{../lab1_data/lab1_8a.PNG} 
   \subsection*{9 Share Your Feedback}
     This was an overall straightforward and helpful lab.
 \section*{Conclusion}
