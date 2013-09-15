@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  11 SEP 2013 12:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  15 SEP 2013 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -37,7 +37,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip43
 )
-No file writeup2.aux.
+(./writeup2.aux)
 \openout1 = `writeup2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -58,24 +58,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 11.
-[1
+ [1
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./writeup2.aux) ) 
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./writ
+eup2.aux) ) 
 Here is how much of TeX's memory you used:
- 246 strings out of 493488
- 2810 string characters out of 3141326
- 50432 words of memory out of 3000000
+ 248 strings out of 493488
+ 2836 string characters out of 3141326
+ 51432 words of memory out of 3000000
  3626 multiletter control sequences out of 15000+200000
  7587 words of font info for 27 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 23i,6n,19p,160b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb>
-Output written on writeup2.pdf (1 page, 46181 bytes).
+ 23i,6n,19p,308b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
+pfb>
+Output written on writeup2.pdf (1 page, 58685 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
