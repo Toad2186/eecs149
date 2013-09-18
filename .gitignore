@@ -1,0 +1,51 @@
+# Latex ignore
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdy
+*.tdo
+
+# Mac stuff
+*.DS_Store
+
+# Binaries
+*bin
+
+# SDK
+*SDK
+
+# Python
+*.pyc
+
+# Others
+*.help
+
+# Extracted tarballs
+*extract
