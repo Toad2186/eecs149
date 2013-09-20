@@ -1,0 +1,51 @@
+----------------- Guide ---------------------------
+http://www.instructables.com/id/LED-Cube-4x4x4/
+
+
+----------------- Materials ---------------------------
+27 LEDs
+Protoboard
+Atmel AVR Atmega 16
+2 optional status LEDs
+Max232 rs-232 chip (Looks like a serial transmitter?)
+9x 100-400 Ohm resistors for LEDs
+2x 470 Ohm resistors for status LEDs
+1x 10k resistor
+3x 2.2k resistor
+3x NPN transistor BC388 (or 250 mA capable)
+1x 10uF cap
+1x 1000uF cap
+6x .1uF ceramic cap
+2x 22pF ceramic cap
+1x crystal 14.7456 MHz
+2x tactile button
+Optional power switch
+12v Power connector
+Optional 5v connector
+
+
+
+Notes: The serial transmitter, Atmega16, and crystal can all probably be replaced
+with a microcontroller, along with most other things (see "The controller")
+
+----------------- Build -----------------------
+Split the cube into 3 layers of 3x3 (3 horizontal 3x3 squares)
+LEDs in column shares common anode (+)
+LEDs in horizontal layer shares common cathode(-)
+
+Only light _one_ layer at a time!
+
+Follow instructions (linked above) to build the cube
+
+----------------- Resistors ------------------
+Keep in mind max source current of microcontroller!
+Also max current LEDs can accept!
+
+Choose resistors based on above
+
+----------------- The controller -------------------
+As far as I can tell, aside from the resistors for the LEDs, most of the eletronics
+are for building our own controller. We don't need these if we're using our own controller.
+The caps, extra resistors, status LEDs, etc. Not necessary. We only need the 9x 100-400 Ohm resistors (for the anodes)
+and the 3x 2.2k resistors for the cathodes. The cathodes also get the transistors attached.
+More GPIO pins drive the transistor gates (Is this safe?)
