@@ -1,0 +1,51 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage}
+\usepackage{listings}
+
+\begin{document}
+  \title{Lab 4: Programming Embedded Systems}
+  \author{Toan Vuong and Sam Mansfield\\
+          EECS149}
+  \date{September 24th, 2013}
+  \maketitle
+
+  \section*{Generating Tones in Microblaze}
+    \begin{enumerate}
+      \setcounter{enumi}{2}
+      \item Configure a Periodic Timed Interrupt 
+        \begin{enumerate}
+          \item Provide the content of your main program loop and interrupt service routine.\\[1em]
+        \end{enumerate}
+
+      \item Starve the Processor
+        \begin{enumerate}
+          \item At what frequency does MicroBlaze exhibit erratic behaviour or become unresponsive? What behavior did you observe?\\[1em]
+        \end{enumerate}
+
+      \item Share your Feedback\\[1em]
+    \end{enumerate}
+
+  \section*{Program an ADC in MicroBlaze}
+    \begin{enumerate}
+      \setcounter{enumi}{2}
+      \item Poll the ADC 
+      \begin{enumerate}
+        \item Provide the content of your main() program loop.\\[1em]
+
+        \item When configuring the ADC in the main() program loop, were there any steps that set the rate at which the ADC is polled, or does your code run as fast as possible?\\[1em]
+      \end{enumerate}
+
+      \item Use Timed Interrupts to Poll the ADC
+        \begin{enumerate}
+          \item Provide the content of main() that configures the timer ISR, as well as the body of the ISR routine.\\[1em]
+        \end{enumerate}
+
+      \item Use ADC and Timed Interrupts to Read the ADC
+        \begin{enumerate}
+          \item Provide the content of your main() function needed to configure the timer and ADC ISRs, as well as the content of the timer and ADC ISRs.\\[1em]
+        \end{enumerate}
+
+      \item Share your Feedback\\[1em]
+    \end{enumerate}
+  
+\end{document}
