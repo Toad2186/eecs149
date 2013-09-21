@@ -58,114 +58,94 @@ void ADC_ISR(void);
 
 // Primary ISR: call interrupt handlers for active interrupts
 void primary_ISR (void){
-	primaryIsrCount++;
+  primaryIsrCount++;
+  
+  // Determine which interrupt fired and call appropriate ISR
+  if (INTC_IPR & TIMER0_INTR_MASK) {
+    timer_ISR();
+  } else {
+    ADC_ISR();
+  }
 
-	// TODO: Determine which interrupt fired and call appropriate ISR
-	if (INTC_IPR & TIMER0_INTR_MASK) {
-		timer_ISR();
-	} else {
-		ADC_ISR();
-	}
-	// Acknowledge master interrupts
-	INTC_IAR = INTC_IPR;
- }
+  // Acknowledge master interrupts
+  INTC_IAR = INTC_IPR;
+}
 
 // Timer ISR
 void timer_ISR(void){
-	timerIsrCount++;
-	switch(counter) {
-	case 0: ADC_CTRL = 0x00000001;
-			counter++;
-			break;
-	case 1: ADC_CTRL = 0x00010001;
-			counter++;
-			break;
-	case 2: ADC_CTRL = 0x00020001;
-			counter = 0;
-			break;
-	}
-
-//	asm("nop");
-//	asm("nop");
-//	asm("nop");
-//	asm("nop");
-	//while(ADC_STATUS & 1);
-	//channel2 = (ADC_STATUS & 0x0FFF0000) >> 16;
-	//ADC_IAR = 0;
-	//flag = !flag;
-	//DIOB_70OUT = flag; // Flip DIO line to drive speakers
-	TCSR0 = TCSR0 | 0x00000100; // Acknowledge interrupt
- 	// TODO: the body of your timer ISR goes here
-
-	// TODO: Acknowledge the timer interrupt
-	// Without this acknowledgment, MicroBlaze processor will remain
-	// interrupted by the Timer. The program will halt and the debugger
-	// will not be able to connect until MicroBlaze is restarted.
-	// If this occurs:
-	//     1. Close Xilinx SDK
-	//     2. Disconnect and reconnect the JTAG debugger from the computer.
-	//     3. Restart SDK.
-	
- }
+  timerIsrCount++;
+  switch(counter) {
+  case 0: ADC_CTRL = 0x00000001;
+  		counter++;
+  		break;
+  case 1: ADC_CTRL = 0x00010001;
+  		counter++;
+  		break;
+  case 2: ADC_CTRL = 0x00020001;
+  		counter = 0;
+  		break;
+  }
+  
+  //flag = !flag;
+  //DIOB_70OUT = flag; // Flip DIO line to drive speakers
+  TCSR0 = TCSR0 | 0x00000100; // Acknowledge interrupt
+}
 
 // ADC ISR: fires when ADC conversion complete
 void ADC_ISR(void){
-	adcIsrCount++;
-	switch(counter) {
-	case 0: channel2 = (ADC_STATUS & 0x0FFF0000) >> 16;
-			break;
-	case 1: channel1 = (ADC_STATUS & 0x0FFF0000) >> 16;
-			break;
-	case 2: channel0 = (ADC_STATUS & 0x0FFF0000) >> 16;
-			break;
-	}
-	ADC_CTRL = 0x00020000;
-	ADC_IAR = 1;
-	//TODO: The body of your ADC ISR lives here.
-
-	//TODO: Acknowledge the ADC interrupt
+  adcIsrCount++;
+  switch(counter) {
+  case 0: channel2 = (ADC_STATUS & 0x0FFF0000) >> 16;
+          break;
+  case 1: channel1 = (ADC_STATUS & 0x0FFF0000) >> 16;
+          break;
+  case 2: channel0 = (ADC_STATUS & 0x0FFF0000) >> 16;
+          break;
+  }
+  
+  ADC_CTRL = 0x00020000;
+  // Acknowledge interrupt 
+  ADC_IAR = 1;
 }
 
 // Main program loop
 int main(void){
-	// Clock is 50 MHz
-	// TODO: Configure timer
-	 			///TODO: Load the value for timer to count down.
-						//Hint : read Xilinx documentation(DS764) on AXI Timer IP  .
-	TLR0 = 250000;
-	//TLR0 = 1;
-	TCSR0 = 0b10000;
-	// 0b0000 1110 0010
-	TCSR0 = 0x000000D2;		///TODO: Setup timer with interrupt enable and start to count continuously
-						//Hint : read Xilinx documentation(DS764) on AXI Timer IP  .
+  //Clock for the timer is 50 MHz
+  //Set the Timer register
+  //The timer is TLR0/50MHz
+  TLR0 = 250000;
+  // Load the timer register 
+  // 0b0000 1110 0010
+  TCSR0 = 0b10000;
+  // Setup the timer interrupts and such 
+  TCSR0 = 0x000000D2;		
+  
+  // Enable interrupts
+  INTC_IER = TIMER0_INTR_MASK | ADC_INTR_MASK; 
+  //INTC_IER = ADC_INTR_MASK;
+  //Enable Master and Hardware interrupt of the system 
+  INTC_MER = 0b11; 
+  
+  // This call will allow event to interrupt MicroBlaze core
+  microblaze_enable_interrupts();
+  
+  for(;;){
+    // Print a debug message to the console
+    printf(
+      "channel0 = %05d\t"
+      "channel1 = %05d\t"
+      "channel2 = %05d\t"
+      "primaryIsrCount = %03d\t"
+      "timerIsrCount = %03d\t"
+      "adcIsrCount = %03d\n",
+      channel0,
+      channel1,
+      channel2,
+      primaryIsrCount,
+      timerIsrCount,
+      adcIsrCount
+    );
+  }
 
-	// TODO: Enable interrupts
-	INTC_IER = TIMER0_INTR_MASK | ADC_INTR_MASK; ///TODO: Turn on correct interrupts in order to enable them.
-	               //Hint : read Xilinx documentation(DS747) on AXI INTC IP  .
-	//INTC_IER = ADC_INTR_MASK;
-	INTC_MER = 0b11; ///TODO: Enable Master and Hardware interrupt of the system.
-	               //Hint : read Xilinx documentation(DS747) on AXI INTC IP  .
-
-	// This call will allow event to interrupt MicroBlaze core
-	microblaze_enable_interrupts();
-
-	for(;;){
-		// Print a debug message to the console
-		printf(
-			"channel0 = %05d\t"
-			"channel1 = %05d\t"
-			"channel2 = %05d\t"
-			"primaryIsrCount = %03d\t"
-			"timerIsrCount = %03d\t"
-			"adcIsrCount = %03d\n",
-			channel0,
-			channel1,
-			channel2,
-			primaryIsrCount,
-			timerIsrCount,
-			adcIsrCount
-		);
-	}
-
-    return 0;
+  return 0;
 }

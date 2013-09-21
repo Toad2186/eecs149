@@ -95,54 +95,69 @@ void ADC_ISR(void){
 
 // Main program loop
 int main(void){
-	// Clock is 50 MHz
-	// TODO: Configure timer
-	 			///TODO: Load the value for timer to count down.
-						//Hint : read Xilinx documentation(DS764) on AXI Timer IP  .
-	TLR0 = 56818;
-	//TLR0 = 1;
-	TCSR0 = 0b10000;
-	// 0b0000 1110 0010
-	TCSR0 = 0x000000D2;		///TODO: Setup timer with interrupt enable and start to count continuously
-						//Hint : read Xilinx documentation(DS764) on AXI Timer IP  .
+  //Clock for the timer is 50 MHz
+  //Set the Timer register
+  //The timer is TLR0/50MHz
+  TLR0 = 56818;
+  //Load the timer register 
+  // 0b0000 1110 0010
+  TCSR0 = 0b10000;
+  //Setup the timer interrupts, modes and such 
+  TCSR0 = 0x000000D2;		
+  
+  //Enable interrupts
+  //INTC_IER = TIMER0_INTR_MASK;
+  INTC_IER = ADC_INTR_MASK;
+  //Disable Master and Hardware interrupt of the system.
+  INTC_MER = 0b0; 
+  
+  // This call will allow event to interrupt MicroBlaze core
+  microblaze_enable_interrupts();
+  
+  for(;;){
+    ADC_CTRL = 0x00000001;
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    while(ADC_STATUS & 1);
+    channel0 = (ADC_STATUS & 0x0FFF0000) >> 16;
+    ADC_CTRL = 0x00000000;
+    
+    ADC_CTRL = 0x00010001;
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    while(ADC_STATUS & 1);
+    channel1 = (ADC_STATUS & 0x0FFF0000) >> 16;
+    ADC_CTRL = 0x00010000;
+    
+    ADC_CTRL = 0x00020001;
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    asm("nop");
+    while(ADC_STATUS & 1);
+    channel2 = (ADC_STATUS & 0x0FFF0000) >> 16;
+    ADC_CTRL = 0x00020000;
 
-	// TODO: Enable interrupts
-	//INTC_IER = TIMER0_INTR_MASK; ///TODO: Turn on correct interrupts in order to enable them.
-	               //Hint : read Xilinx documentation(DS747) on AXI INTC IP  .
-	INTC_IER = ADC_INTR_MASK;
-	INTC_MER = 0b0; ///TODO: Enable Master and Hardware interrupt of the system.
-	               //Hint : read Xilinx documentation(DS747) on AXI INTC IP  .
+    // Print a debug message to the console
+    printf(
+      "channel0 = %05d\t"
+      "channel1 = %05d\t"
+      "channel2 = %05d\t"
+      "primaryIsrCount = %03d\t"
+      "timerIsrCount = %03d\t"
+      "adcIsrCount = %03d\n",
+      channel0,
+      channel1,
+      channel2,
+      primaryIsrCount,
+      timerIsrCount,
+      adcIsrCount
+    );
+  }
 
-	// This call will allow event to interrupt MicroBlaze core
-	microblaze_enable_interrupts();
-
-	for(;;){
-		ADC_CTRL = 0x00020001;
-		asm("nop");
-		asm("nop");
-		asm("nop");
-		asm("nop");
-		while(ADC_STATUS & 1);
-		channel2 = (ADC_STATUS & 0x0FFF0000) >> 16;
-		//ADC_IAR = 0;
-		ADC_CTRL = 0x00020000;
-
-		// Print a debug message to the console
-		printf(
-			"channel0 = %05d\t"
-			"channel1 = %05d\t"
-			"channel2 = %05d\t"
-			"primaryIsrCount = %03d\t"
-			"timerIsrCount = %03d\t"
-			"adcIsrCount = %03d\n",
-			channel0,
-			channel1,
-			channel2,
-			primaryIsrCount,
-			timerIsrCount,
-			adcIsrCount
-		);
-	}
-
-    return 0;
+  return 0;
 }
