@@ -42,20 +42,28 @@
   \date{September 24th, 2013}
   \maketitle
 
+  \section*{Introduction}
+  In this lab, we used interrupts provided by the MicroBlaze to generate a constant tone of single frequency. We then pushed our processor to its limits by increasing the frequency of this tone, and thereby of the interrupts. The results surprised us as the processor never became unresponsive. \\
+  The second part of the lab involves three different techniques to read from an ADC: Polling, timed polling, and pure interrupts. We analyzed the pro's and con's of each, and concluded that, by using pure interrupts, we can fully utilize all our processor cycles whereas with polling, we waste cycles waiting for the ADC to complete. The end result is an efficient way to obtain readings from our accelerometer while being able to do additional processing in the time that the ADC is active.
+
   \section*{Generating Tones in Microblaze}
     \begin{enumerate}
       \setcounter{enumi}{2}
       \item Configure a Periodic Timed Interrupt 
         \begin{enumerate}
           \item Provide the content of your main program loop and interrupt service routine.\\[1em]
+          \lstinputlisting[language=C, firstline=54, lastline=85]{../lab3_data/timedIO1.c}
+          \lstinputlisting[language=C, firstline=97, lastline=132]{../lab3_data/timedIO1.c}
         \end{enumerate}
 
       \item Starve the Processor
         \begin{enumerate}
           \item At what frequency does MicroBlaze exhibit erratic behaviour or become unresponsive? What behavior did you observe?\\[1em]
+            We expected for the processor to be unresponsive once the frequency of interrupts were at a point in which the processor could no longer work. However, we found that this was not the case. Even when we forced the interrupts to happen every cycle by setting the timer to fire off every cycle, the processor still handled this interrupt frequency just fine. We suspect that there may be some hardware that is either dedicated to handling interrupt, or the compiler is smart enough to prevent interrupts from starving the processor.
         \end{enumerate}
 
       \item Share your Feedback\\[1em]
+      Although frustrating in the beginning, once the tone starts generating it was definitely worth it. We had to re-RTFM many times, learning to read it very carefully. We also had trouble converting binary to hex, but this was again a careless error on our part. One thing we would like to point out for future labs is that the timer ticks once every clock cycle. 
     \end{enumerate}
 
   \section*{Program an ADC in MicroBlaze}
@@ -84,7 +92,7 @@
         \end{enumerate}
 
       \item Share your Feedback\\[1em]
-        This lab was very helpful. The only thing that was confusing was that we were writing to pin 8, but measuring from pin 0. I think this has something to do with that the mask was wrong in the code give to us, but I would have preferred to fix the mask then to the hacky method of just measuring from pin 0.
+        This lab was very helpful. The only thing that was confusing was that we were writing to pin 8, but measuring from pin 0. I think this has something to do with that the mask was wrong in the code give to us, but I would have preferred to fix the mask than to the hacky method of just measuring from pin 0.
     \end{enumerate}
  
   \section*{Conclusion}

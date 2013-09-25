@@ -96,21 +96,15 @@ void ADC_ISR(void){
 // Main program loop
 int main(void){
 	// Clock is 50 MHz
-	// TODO: Configure timer
-	 			///TODO: Load the value for timer to count down.
-						//Hint : read Xilinx documentation(DS764) on AXI Timer IP  .
 	TLR0 = 56818;
 	//TLR0 = 1;
 	TCSR0 = 0b10000;
 	// 0b0000 1110 0010
-	TCSR0 = 0x000000D2;		///TODO: Setup timer with interrupt enable and start to count continuously
-						//Hint : read Xilinx documentation(DS764) on AXI Timer IP  .
+	TCSR0 = 0x000000D2;
 
 	// TODO: Enable interrupts
-	INTC_IER = TIMER0_INTR_MASK; ///TODO: Turn on correct interrupts in order to enable them.
-	               //Hint : read Xilinx documentation(DS747) on AXI INTC IP  .
-	INTC_MER = 0b11; ///TODO: Enable Master and Hardware interrupt of the system.
-	               //Hint : read Xilinx documentation(DS747) on AXI INTC IP  .
+	INTC_IER = TIMER0_INTR_MASK; 
+	INTC_MER = 0b11; 
 
 	// This call will allow event to interrupt MicroBlaze core
 	microblaze_enable_interrupts();
