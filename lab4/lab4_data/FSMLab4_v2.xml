@@ -1,0 +1,290 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE entity PUBLIC "-//UC Berkeley//DTD MoML 1//EN"
+    "http://ptolemy.eecs.berkeley.edu/xml/dtd/MoML_1.dtd">
+<entity name="FSMLab4_v2" class="ptolemy.domains.modal.kernel.FSMActor">
+    <property name="_createdBy" class="ptolemy.kernel.attributes.VersionAttribute" value="8.0.1_20101021">
+    </property>
+    <property name="_library" class="ptolemy.moml.LibraryAttribute">
+        <configure>
+    <entity name="StateLibrary" class="ptolemy.kernel.CompositeEntity"><input source="ptolemy/configs/basicUtilities.xml"></input><entity name="State" class="ptolemy.domains.modal.kernel.State"><property name="_centerName" class="ptolemy.kernel.util.Attribute"></property></entity></entity>
+  </configure>
+    </property>
+    <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={67, 22, 1231, 742}, maximized=false}">
+    </property>
+    <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[1018, 631]">
+    </property>
+    <property name="_vergilZoomFactor" class="ptolemy.data.expr.ExpertParameter" value="0.8">
+    </property>
+    <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{517.4375000000003, 322.5312499999999}">
+    </property>
+    <entity name="INITIAL" class="ptolemy.domains.modal.kernel.State">
+        <property name="isInitialState" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+        <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[238.45090003235322, 28.540718673983136]">
+        </property>
+    </entity>
+    <entity name="PAUSE_WAIT_BUTTON_RELEASE" class="ptolemy.domains.modal.kernel.State">
+        <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[150.0, 189.99999738074226]">
+        </property>
+    </entity>
+    <entity name="UNPAUSE_WAIT_BUTTON_RELEASE" class="ptolemy.domains.modal.kernel.State">
+        <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[655.0, 19.999997380742244]">
+        </property>
+    </entity>
+    <entity name="UNPAUSE_WAIT_BUTTON_PRESS" class="ptolemy.domains.modal.kernel.State">
+        <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[398.4509000323533, 23.540718673983136]">
+        </property>
+    </entity>
+    <entity name="DRIVE" class="ptolemy.domains.modal.kernel.State">
+        <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[204.01247719353643, 471.4084702503824]">
+        </property>
+    </entity>
+    <entity name="TURN" class="ptolemy.domains.modal.kernel.State">
+        <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[380.0, 379.99999738074223]">
+        </property>
+    </entity>
+    <entity name="BACK" class="ptolemy.domains.modal.kernel.State">
+        <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[619.0124771935364, 471.4084702503824]">
+        </property>
+    </entity>
+    <entity name="TURNRIGHT" class="ptolemy.domains.modal.kernel.State">
+        <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[790.0, 464.9999973807421]">
+        </property>
+    </entity>
+    <entity name="unPausedState (not an actual state, either DRIVE, BACK, TURN, or TURNRIGHT)" class="ptolemy.domains.modal.kernel.State">
+        <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[755.0, 99.99999738074229]">
+        </property>
+    </entity>
+    <relation name="relation" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="-0.9793120861374094">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-0.11187266296111749">
+        </property>
+        <property name="defaultTransition" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+    </relation>
+    <relation name="relation2" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="isSimulator">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="2.356194490192345">
+            <property name="_editorFactory" class="ptolemy.vergil.toolbox.VisibleParameterEditorFactory">
+            </property>
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="2.4267786637017656">
+        </property>
+    </relation>
+    <relation name="relation3" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="!sensors.buttons.play">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="-0.4441789015002316">
+            <property name="_editorFactory" class="ptolemy.vergil.toolbox.VisibleParameterEditorFactory">
+            </property>
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-0.02488931989087365">
+        </property>
+    </relation>
+    <relation name="relation4" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="2.361756776139181">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-5.226723718494767">
+        </property>
+        <property name="defaultTransition" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+    </relation>
+    <relation name="relation6" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="!sensors.buttons.play">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="-0.5304911456416548">
+            <property name="_editorFactory" class="ptolemy.vergil.toolbox.VisibleParameterEditorFactory">
+            </property>
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-0.8514631007245935">
+        </property>
+    </relation>
+    <relation name="relation7" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="2.0478792299066555">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-0.9351289186240731">
+        </property>
+        <property name="preemptive" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="defaultTransition" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+    </relation>
+    <relation name="relation9" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="sensors.bumps_wheelDrops.bumpLeft || &#10;sensors.bumps_wheelDrops.bumpRight || &#10;sensors.cliffFrontLeft || &#10;sensors.cliffFrontRight || &#10;sensors.cliffLeft || &#10;sensors.cliffRight&#10;obstacles++;&#10;avoid = true;">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="0.2490410439882536">
+            <property name="_editorFactory" class="ptolemy.vergil.toolbox.VisibleParameterEditorFactory">
+            </property>
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="0.006950121020654329">
+        </property>
+    </relation>
+    <relation name="relation10" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="2.3652972643723116">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="0.5521488321646205">
+        </property>
+        <property name="defaultTransition" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+    </relation>
+    <relation name="relation11" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="abs(netAngle - angleAtManeuverStart) &gt;= 90">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="-0.40190988251598214">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="2.593427606008726">
+        </property>
+    </relation>
+    <relation name="relation12" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="2.650537684424624">
+            <property name="_editorFactory" class="ptolemy.vergil.toolbox.VisibleParameterEditorFactory">
+            </property>
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-1.2606880052997553">
+        </property>
+        <property name="defaultTransition" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+    </relation>
+    <relation name="relation13" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="abs(distanceAtManeuverStart - netDistance) &gt;= 50">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="0.6283185307179586">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-2.434025092535732">
+        </property>
+    </relation>
+    <relation name="relation14" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="2.448316183086776">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-2.95904357859085">
+        </property>
+        <property name="defaultTransition" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+    </relation>
+    <relation name="relation15" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="abs(netAngle - angleAtManeuverStart) &gt;= 90&#10;obstacles--;&#10;if (obstacles == 0) avoid = false;">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="1.1428637459476712">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-3.1344976567603946">
+        </property>
+    </relation>
+    <relation name="relation16" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="2.7861361792861747">
+            <property name="_editorFactory" class="ptolemy.vergil.toolbox.VisibleParameterEditorFactory">
+            </property>
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-1.9245442085886542">
+        </property>
+        <property name="defaultTransition" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+    </relation>
+    <relation name="relation17" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="sensors.buttons.play&#10;unPausedState = DRIVE">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="-0.7433274562496606">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-1.7830977173175009">
+        </property>
+    </relation>
+    <relation name="relation18" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="sensors.buttons.play&#10;unPausedState = TURN">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="-0.4801421649493908">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-2.6385208683710712">
+        </property>
+    </relation>
+    <relation name="relation20" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="sensors.buttons.play&#10;unPausedState = TURNRIGHT">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="0.8832970766590214">
+            <property name="_editorFactory" class="ptolemy.vergil.toolbox.VisibleParameterEditorFactory">
+            </property>
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-2.7081834668539853">
+        </property>
+    </relation>
+    <relation name="relation21" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="-0.49439580651875686">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="0.9359507572371352">
+        </property>
+    </relation>
+    <relation name="relation19" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="sensors.buttons.play&#10;unpausedState = BACK">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="0.1769181209748842">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="-2.592010762452297">
+        </property>
+    </relation>
+    <relation name="relation5" class="ptolemy.domains.modal.kernel.Transition">
+        <property name="annotation" class="ptolemy.data.expr.StringParameter" value="distanceAtManeuverStart - netDistance &gt;= 250 ^ avoid == true">
+        </property>
+        <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="1.019396650476496">
+        </property>
+        <property name="gamma" class="ptolemy.data.expr.Parameter" value="0.007707191705092161">
+        </property>
+    </relation>
+    <link port="INITIAL.incomingPort" relation="relation2"/>
+    <link port="INITIAL.outgoingPort" relation="relation"/>
+    <link port="INITIAL.outgoingPort" relation="relation2"/>
+    <link port="PAUSE_WAIT_BUTTON_RELEASE.incomingPort" relation="relation7"/>
+    <link port="PAUSE_WAIT_BUTTON_RELEASE.incomingPort" relation="relation17"/>
+    <link port="PAUSE_WAIT_BUTTON_RELEASE.incomingPort" relation="relation18"/>
+    <link port="PAUSE_WAIT_BUTTON_RELEASE.incomingPort" relation="relation19"/>
+    <link port="PAUSE_WAIT_BUTTON_RELEASE.incomingPort" relation="relation20"/>
+    <link port="PAUSE_WAIT_BUTTON_RELEASE.outgoingPort" relation="relation6"/>
+    <link port="PAUSE_WAIT_BUTTON_RELEASE.outgoingPort" relation="relation7"/>
+    <link port="UNPAUSE_WAIT_BUTTON_RELEASE.incomingPort" relation="relation3"/>
+    <link port="UNPAUSE_WAIT_BUTTON_RELEASE.outgoingPort" relation="relation21"/>
+    <link port="UNPAUSE_WAIT_BUTTON_PRESS.incomingPort" relation="relation"/>
+    <link port="UNPAUSE_WAIT_BUTTON_PRESS.incomingPort" relation="relation4"/>
+    <link port="UNPAUSE_WAIT_BUTTON_PRESS.incomingPort" relation="relation6"/>
+    <link port="UNPAUSE_WAIT_BUTTON_PRESS.outgoingPort" relation="relation3"/>
+    <link port="UNPAUSE_WAIT_BUTTON_PRESS.outgoingPort" relation="relation4"/>
+    <link port="DRIVE.incomingPort" relation="relation10"/>
+    <link port="DRIVE.incomingPort" relation="relation11"/>
+    <link port="DRIVE.incomingPort" relation="relation15"/>
+    <link port="DRIVE.outgoingPort" relation="relation9"/>
+    <link port="DRIVE.outgoingPort" relation="relation10"/>
+    <link port="DRIVE.outgoingPort" relation="relation17"/>
+    <link port="DRIVE.outgoingPort" relation="relation5"/>
+    <link port="TURN.incomingPort" relation="relation12"/>
+    <link port="TURN.incomingPort" relation="relation13"/>
+    <link port="TURN.outgoingPort" relation="relation11"/>
+    <link port="TURN.outgoingPort" relation="relation12"/>
+    <link port="TURN.outgoingPort" relation="relation18"/>
+    <link port="BACK.incomingPort" relation="relation9"/>
+    <link port="BACK.incomingPort" relation="relation14"/>
+    <link port="BACK.outgoingPort" relation="relation13"/>
+    <link port="BACK.outgoingPort" relation="relation14"/>
+    <link port="BACK.outgoingPort" relation="relation19"/>
+    <link port="TURNRIGHT.incomingPort" relation="relation16"/>
+    <link port="TURNRIGHT.incomingPort" relation="relation5"/>
+    <link port="TURNRIGHT.outgoingPort" relation="relation15"/>
+    <link port="TURNRIGHT.outgoingPort" relation="relation16"/>
+    <link port="TURNRIGHT.outgoingPort" relation="relation20"/>
+    <link port="unPausedState (not an actual state, either DRIVE, BACK, TURN, or TURNRIGHT).incomingPort" relation="relation21"/>
+</entity>
