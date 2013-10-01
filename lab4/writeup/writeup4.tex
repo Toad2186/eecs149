@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 
 \begin{document}
-  \title{Lab4: iRobot Navigation in C}
+  \title{Lab 4: iRobot Navigation in C}
   \author{Sam Mansfield and Toan Vuong\\
           TA: Hoekun Kim\\ 
           EECS149}
@@ -17,13 +17,13 @@
     %Analysis of algorithm used
      
     %State Machine 
-      We ended up adding two new states, BACK and TURNRIGHT. When the iRobot is unpaused and senses an obstacle or cliff in the DRIVE state, it goes into obstacle avoidance mode and goes into the BACK state. The BACK state travels 50 mm backwards and goes into the TURNRIGHT state and the TURNRIGHT state, after making a right turn goes back into the DRIVE state. Figure 1 displays our final FSM.
+      We ended up adding two new states, BACK and TURNRIGHT. The BACK state goes backwards for 50 mm, the TURNRIGHT state makes a right turn. Figure 1 displays our final FSM.
 
-      At the beginning of the lab we tried to create a more elaborate FSM and realized that we were actually making things more complicated to debug and therefore implement. By simplifying our design we created a better FSM. If I had to change one thing I would take out the square pattern, it makes the program more complicated to think about since you only have to correct within your square, which is a little odd considering that you will eventually be going in the corrected orientation after an obstacle eventually.
+      At the beginning of the lab we tried to create a more elaborate FSM and realized that we were actually making things more complicated to debug and therefore implement. By simplifying our design we created a better FSM. It was a little unclear if we were supposed to use the square pattern that initially boots up or to just make the robot go straight. Initially we created an obstacle avoidance algorithm that only worked for the square pattern. It was only later on that we realized that we were supposed to create an obstacle avoidance algorithm for a straight line.
     
     \begin{figure}[h!]
       \centering
-        \includegraphics[width=1\textwidth]{../lab4_data/FSMLab4}
+        \includegraphics[width=1\textwidth]{../lab4_data/FSMLab4v2}
       \caption{Obstacle/Cliff avoidance FSM implemented in Lab 4}
     \end{figure}
 
