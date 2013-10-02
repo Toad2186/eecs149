@@ -9,13 +9,15 @@
     <entity name="StateLibrary" class="ptolemy.kernel.CompositeEntity"><input source="ptolemy/configs/basicUtilities.xml"></input><entity name="State" class="ptolemy.domains.modal.kernel.State"><property name="_centerName" class="ptolemy.kernel.util.Attribute"></property></entity></entity>
   </configure>
     </property>
-    <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={67, 22, 1231, 742}, maximized=false}">
+    <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={664, 349, 1231, 742}, maximized=false}">
     </property>
     <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[1018, 631]">
     </property>
     <property name="_vergilZoomFactor" class="ptolemy.data.expr.ExpertParameter" value="0.8">
     </property>
     <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{517.4375000000003, 322.5312499999999}">
+    </property>
+    <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="false">
     </property>
     <entity name="INITIAL" class="ptolemy.domains.modal.kernel.State">
         <property name="isInitialState" class="ptolemy.data.expr.Parameter" value="true">
@@ -49,7 +51,7 @@
         <property name="_location" class="ptolemy.kernel.util.Location" value="[204.01247719353643, 471.4084702503824]">
         </property>
     </entity>
-    <entity name="TURN" class="ptolemy.domains.modal.kernel.State">
+    <entity name="TURNRIGHT" class="ptolemy.domains.modal.kernel.State">
         <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
         </property>
         <property name="_location" class="ptolemy.kernel.util.Location" value="[380.0, 379.99999738074223]">
@@ -61,7 +63,7 @@
         <property name="_location" class="ptolemy.kernel.util.Location" value="[619.0124771935364, 471.4084702503824]">
         </property>
     </entity>
-    <entity name="TURNRIGHT" class="ptolemy.domains.modal.kernel.State">
+    <entity name="TURN" class="ptolemy.domains.modal.kernel.State">
         <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
         </property>
         <property name="_location" class="ptolemy.kernel.util.Location" value="[790.0, 464.9999973807421]">
@@ -271,20 +273,20 @@
     <link port="DRIVE.outgoingPort" relation="relation10"/>
     <link port="DRIVE.outgoingPort" relation="relation17"/>
     <link port="DRIVE.outgoingPort" relation="relation5"/>
-    <link port="TURN.incomingPort" relation="relation12"/>
-    <link port="TURN.incomingPort" relation="relation13"/>
-    <link port="TURN.outgoingPort" relation="relation11"/>
-    <link port="TURN.outgoingPort" relation="relation12"/>
-    <link port="TURN.outgoingPort" relation="relation18"/>
+    <link port="TURNRIGHT.incomingPort" relation="relation12"/>
+    <link port="TURNRIGHT.incomingPort" relation="relation13"/>
+    <link port="TURNRIGHT.outgoingPort" relation="relation11"/>
+    <link port="TURNRIGHT.outgoingPort" relation="relation12"/>
+    <link port="TURNRIGHT.outgoingPort" relation="relation18"/>
     <link port="BACK.incomingPort" relation="relation9"/>
     <link port="BACK.incomingPort" relation="relation14"/>
     <link port="BACK.outgoingPort" relation="relation13"/>
     <link port="BACK.outgoingPort" relation="relation14"/>
     <link port="BACK.outgoingPort" relation="relation19"/>
-    <link port="TURNRIGHT.incomingPort" relation="relation16"/>
-    <link port="TURNRIGHT.incomingPort" relation="relation5"/>
-    <link port="TURNRIGHT.outgoingPort" relation="relation15"/>
-    <link port="TURNRIGHT.outgoingPort" relation="relation16"/>
-    <link port="TURNRIGHT.outgoingPort" relation="relation20"/>
+    <link port="TURN.incomingPort" relation="relation16"/>
+    <link port="TURN.incomingPort" relation="relation5"/>
+    <link port="TURN.outgoingPort" relation="relation15"/>
+    <link port="TURN.outgoingPort" relation="relation16"/>
+    <link port="TURN.outgoingPort" relation="relation20"/>
     <link port="unPausedState (not an actual state, either DRIVE, BACK, TURN, or TURNRIGHT).incomingPort" relation="relation21"/>
 </entity>

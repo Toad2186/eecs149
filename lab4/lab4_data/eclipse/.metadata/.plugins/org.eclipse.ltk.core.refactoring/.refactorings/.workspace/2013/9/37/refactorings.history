@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;myRIO Template&apos; to &apos;myRIO Hello World&apos;" description="Rename resource &apos;myRIO Template&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/myRIO Template" name="myRIO Hello World" stamp="1378922950691" updateReferences="true"/>
-</session>
