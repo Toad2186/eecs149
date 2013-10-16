@@ -6,15 +6,15 @@ struct linkedList {
 /*
  * Column pins
 */
-const int COL_0_0 = 11;
-const int COL_1_0 = 12;
-const int COL_2_0 = 13;
-const int COL_0_1 = 14;
-const int COL_1_1 = 15;
-const int COL_2_1 = 16;
-const int COL_0_2 = 17;
-const int COL_1_2 = 18;
-const int COL_2_2 = 19;
+const int COL_0_0 = 12;
+const int COL_1_0 = 21;
+const int COL_2_0 = 20;
+const int COL_0_1 = 19;
+const int COL_1_1 = 18;
+const int COL_2_1 = 17;
+const int COL_0_2 = 16;
+const int COL_1_2 = 15;
+const int COL_2_2 = 14;
 const int COL_INVALID = 99;
 /*
  * Plane pins
