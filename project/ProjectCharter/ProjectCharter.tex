@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage}
+\usepackage{enumitem}
+
+\begin{document}
+  \title{Project Charter}
+  \author{Toan Vuong and Sam Mansfield\\
+          Mentor: Mark Oehlberg\\ 
+          EECS149}
+  \date{October 24th, 2013}
+  \maketitle
+
+  \section{Overview}
+    The goal of this project to create an 8x8x8 (512 LEDs) interactive cube. This project is based on the companion cube created by the UPenn embedded systems course.
+
+  \section{Approach}
+    We will begin with a proof-of-concept 3x3x3 cube. This cube will be our test bed for LED multiplexing functionalities, as well as ultrasonic sensor reading. Because this project is based on an existing project, we estimate that creating the cube should be done in roughly five weeks including the concept cube, with the remainder of the time focused on developing novel ways to interact with the cube. Our team consists of two people with a mentor, with the following schedule breakdown: \\
+    \begin{itemize}[topsep=0ex]
+    \item Toan Vuong (8 hrs/week for 6 weeks)
+    \item Sam Mansfield (8 hrs/week for 6 weeks)
+    \item Mark Oehlberg (1 hr/week for 6 weeks)
+    \end{itemize}
+    Additional time may be spent closer to the deadline, depending on issues that we encounter.
+  \section{Objectives}
+    \begin{itemize}[topsep=0ex]
+    \itemsep0em
+    \item To create a 3D display using LEDs
+    \item To improve on the display by enabling interactivity
+    \item To apply our knowledge of embedded systems into a real-world project.
+    \end{itemize}
+
+  \section{Major Deliverables}
+    \begin{enumerate}[topsep=0ex]
+    \itemsep0em
+    \item Breakdown of project milestones with corresponding deadlines
+    \item Breakdown of materials required to create the cube
+    \item Proof of concept cube with working ultrasonic sensor reactions
+    \item Sketch of 8x8x8 circuitry, possibly in Eagle for PCB production
+    \item The cube itself, with LEDs in working order
+    \item A list of modes we want to implement for the cube
+    \item The companion program with these modes implemented
+    \end{enumerate}
+
+  \section{Constraints}
+    Since we need a lot of LEDs, we'll need to special order them. This might be an issue if we accidentally burn a layer of LEDs. We also need some transistors which aren't available at the moment. One other potential issue is that neither of us are expert in circuits design, and the one we design might not be very safe.
+  \section{Risk and Feasibility}
+    As with all circuits, burning components in our electronics is always a risk. This is especially an issue because neither of us are hugely experienced with debugging electronics, and this can consume a large amount of time. To prevent this, we will go over our design with our mentor before constructing the 8x8x8 cube. Constructing the cube itself is very feasible, but depending on our time constraints, the interactiveness of the cube may be poor. We are depending a lot on the invention lab tools, such as the PCB printer and 3D printers. We also don't have a huge amount of CAD experience, so learning the tools may take longer than we expect.
+
+\end{document}
