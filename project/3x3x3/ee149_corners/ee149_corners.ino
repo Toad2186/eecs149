@@ -1,3 +1,6 @@
+#define ECHOPIN 10                            // Pin to receive echo pulse
+#define TRIGPIN 9                            // Pin to send trigger pulse
+
 struct linkedList {
   int col;
   struct linkedList *next;
@@ -7,22 +10,22 @@ struct linkedList {
  * Column pins
 */
 const int COL_0_0 = 12;
-const int COL_1_0 = 21;
-const int COL_2_0 = 20;
-const int COL_0_1 = 19;
+const int COL_1_0 = 19;
+const int COL_2_0 = 16;
+const int COL_0_1 = 21;
 const int COL_1_1 = 18;
-const int COL_2_1 = 17;
-const int COL_0_2 = 16;
-const int COL_1_2 = 15;
+const int COL_2_1 = 15;
+const int COL_0_2 = 20;
+const int COL_1_2 = 17;
 const int COL_2_2 = 14;
 const int COL_INVALID = 99;
 /*
  * Plane pins
 */
 
-const int PLANE_0 = 0;
-const int PLANE_1 = 1;
-const int PLANE_2 = 2;
+const int PLANE_0 = 22;
+const int PLANE_1 = 11;
+const int PLANE_2 = 13;
 const int PLANE_INVALID = 99;
 /*
  * Number of columns
@@ -174,7 +177,8 @@ void alternateCorner() {
 }
 
 void loop() {
-  alternateCorner(); 
+  alternateCorner();
+  //alternateCorner(); 
   // Wait a second
   delay(1000);
 }
