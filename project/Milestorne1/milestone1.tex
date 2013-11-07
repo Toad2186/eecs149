@@ -1,0 +1,16 @@
+\documentclass[10pt]{article}
+
+\begin{document}
+
+  \title{Project Update: Milestone 1}
+  \author{Sam Mansfield and Toan Vuong}
+  \date{November 6th, 2013}
+  \maketitle
+
+  We discussed with our mentor the scope and goals of our project and ended up changing it somewhat. At this point we had already made a small 3x3x3 cube with one ultrasonic sensor attached, which we showed to our mentor (Mark Oelhberg). What Mark suggested is that instead of making a cube in the same way that the UPenn students made the cube, why don't we make a chandelier. The idea of the chandelier is that the cube would hang above a room, like a light fixture. From this the idea of making single strands came up. Each strand would consist of eight LEDs, one microcontroller, and one ultrasonic sensor. The microcontroller would have some sort of firmware, which either would have two sets of operation modes, for instance one mode could mirror what it sees below, so depending on how close to the strand an object is more LEDs would turn on. For instance if nothing is under the chandelier then no lights would be on, but if an object is halfway from the ground to the bottom of the chandelier the bottom half of the LEDs would all be on and as the object approached the bottom of the chandelier more and more lights would come on. So, if a person is standing beneath the cube then the outline of the top of the person would be seen based on which LEDs are turned on. Each strand would be completely individual and in this way would be scalable.
+
+  Some problems with this scheme came up. The biggest problem is what type of distance sensor. The most popular type of distance sensors that we know of (ultrasonic and IR) have the problem that the sensor data may get misinterpreted from neighbor sensors, we will have to experiment with different types of sensors and distance to achieve the best results. Another thing to consider is that we want the strands to be as clear as possible. There are individually addressable lights pre-built, but the problem is that the strands will be blocking the light from strands that are behind. What we decided so far is to use magnet wire, which is very thin. This way the wire will be so thin that it won't get in the way. Then to add stability we are thinking of using clear heat shrink. Another thing we are considering is how to mount the microcontroller and distance sensor. We know that the sensor has to be the closest thing to the ground, so it makes sense to also attach the micrcontroller to the distance sensor and maybe make a small PCB for this, since there would be 64 of these.
+
+  Considering these difficulties we are also considering maybe using a kinect, but this would involve a computer, which we would like to avoid, although it might be possible to use something like a Rasberry Pi. We also are considering maybe changing the definition of a strand. So one super strand would be 16 strands that share two distance sensors. This way the sensors would be far enough apart that they wouldn't interfere, but also be scalable and would still be able to represent the outline of a person as the original design also did, but this would involve a more complex algorithm and might also have some unforseen circumstances.
+
+\end{document}
