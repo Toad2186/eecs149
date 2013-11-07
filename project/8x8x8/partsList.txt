@@ -1,0 +1,14 @@
+512x  LEDs (plus some extra for making mistakes!)
+64x resistors. (see separate step for ohm value)
+1x or 2x large prototype PCBs. The type with copper "eyes", see image.
+1x Teensy 3.0
+8x 74HC574 ICs (flip flops)
+16x PN2222 transistors
+1x 74HC138 IC (demultiplexor)
+2x 22pF ceramic capacitors
+16x 0.1uF ceramic capacitors
+3x 1000uF electrolytic capacitor
+3x 10uF electrolytic capacitor
+1x 100uF electrolytic capacitors
+Piece of wood for template and base
+5v power supply (see separate step for power supply)
