@@ -1,1 +1,0 @@
-"./serial.obj" "./printf.obj" "./main.obj" "./adc.obj" "../lnk_msp430g2231.cmd" -l"libc.a" 
