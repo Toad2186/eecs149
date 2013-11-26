@@ -1,4 +1,5 @@
 \documentclass[10pt]{article}
+\usepackage{url}
 
 \begin{document}
   \title{2nd Milestone Update Report}
@@ -10,15 +11,18 @@
   \maketitle
 
   \section{Introduction}
-    Our project is to create an 8 x 8 x 8 LED chandelier that is interactive. We completed a prototype of a strand. It is fully functional and more or less up to specification. Our next step is to start going into production mode and try to make as many strands as we can. Our main limitations are time. Initially we were considering making 64 individual strands, but now we think it is more realistic to create 16.
+    Our project is to create an $8 \times 8 \times 8$ LED chandelier that is interactive. We completed a prototype of a strand. It is fully functional and more or less up to specification. Our next step is to start going into production mode and try to make as many strands as we can. Our main limitations are time and costs. Initially we were considering making 64 individual strands, but now we think it is more realistic to create 16. The main emphasis is that our display is scalable-We can add additional strands in the x-y direction as necessary. The depth can also be increased given a microprocessor with more GPIO pins or a more complicated circuit using demuxers or shift registers.
     
   \section{Hardware}
     \subsection{What we have completed}
-      We completed our first strand prototype. This includes a strand template for the LED's, a somewhat complete method to heat shrink the strands, a PCB prototype, and a strain relief mechanism. This step was crucial for our final production run. Right now we are using two small 3.7V batteries to power our project. 95\% of our hardware is selected and at hand. W
+      We completed our first strand prototype. This includes a strand template for the LED's, a procedure to heat shrink the strands to keep them from tangling, a PCB prototype, and a strain relief mechanism. This step was crucial for our final production run. Right now we are using two small 3.7V batteries to power our project. We have enough hardware to produce a few strands. However, in order to mass produce, we still need a large amount of materials such as LEDs and ultrasonic sensors. 
     \subsection{What's next}
-      To go into our next phase, we have to complete several tasks in terms of hardware. We are designing a PCB that we will print using the PCB mill in the Invention Lab. We have experience using Eagle and using the Invention Lab PCB Mill, so there won't be a learning curve. We are also experimenting with using "fuzzy velvet\footnote{http://www.robot-electronics.co.uk/htm/reducing_sidelobes_of_srf10.htm}" to reduce interference from neighboring strands. We are also looking into using one instead of two batteries and then using a step up voltage regulator to provide power to the 5V ultrasonic sensor.
+      To go into our next phase, we have to complete several tasks in terms of hardware. We are designing a PCB that we will print using the PCB mill in the Invention Lab. We have experience using Eagle and using the Invention Lab PCB Mill, so there won't be a learning curve. We are also experimenting with using ``fuzzy velvet\footnote{\url{http://www.robot-electronics.co.uk/htm/reducing_sidelobes_of_srf10.htm}}`` to reduce interference from neighboring strands. Reducing the angle of our ultrasonic sensors would mean that we can place strands closer together, ultimately leading to a higher resolution display. We are also looking into using one instead of two batteries and then using a step up voltage regulator (boost converter) to provide power to the 5V ultrasonic sensor. This will help reduce the overall footprint of the strands.
   \section{Software}
     \subsection{What we have completed}
+      In terms of software, we decided to go with Code Composer Studio, an IDE that comes with the MSP430 series of microprocessors from TI\@. Previously we have also considered using Energia, a higher level, third-party IDE over the MSP430 processors based on Arduino. However, due to Energia's wasteful footprint (A program on Energia is several times the size of one on CSS), we stuck to CSS\@. We are able to individually address each LED attached to the microprocessor, as well as send a periodic output trigger pulse to the ultrasonic sensor using the built-in PWM support. We use interrupts to read the PWM input from the ultrasonic sensor. Based on this input, a number of the LEDs are set.
     
     \subsection{What is next}
+      One crucial element we want to fit in is the ability to change modes of a strand-i.e. Each strand can have functionalities besides being a display. One major issue with this idea is that we don't have enough GPIO pins to add a mode switch. Our processors come with 10 GPIOs, 8 of which are tied to our LEDs and 2 of which are used for the ultrasonic sensor. To add additional modes, we will leverage the fact that a reset does not reload the program, and thus values in memory are not erased. We plan to keep a global mode counter, and, based on the mode, run one of several different functionalities. This counter will be changed based on the amount of times reset is pressed. One particular mode we plan to simulate is a rain-drop scene. Each LED strand will act asynchronously, lighting one LED at a time to simulate rain fall. We will also add additional modes, time-permitting. Due to our design and limited pins, we do not have the ability to synchronize each strand via an external master controller, which is unfortunate.
+
 \end{document}
