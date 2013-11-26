@@ -1,0 +1,1460 @@
+<zuiprezi>
+  <version>10</version>
+  <zui-table>
+    <settings>
+      
+      <autoplay>
+        
+        <delay>4000</delay>
+        
+      </autoplay>
+      
+      <bounds x="-126952.82382116132" y="-79114.37938917565" width="253905.64764232264" height="158228.7587783513"/>
+      <aspectratio>off</aspectratio>
+      <languages>
+        <language>en</language>
+      </languages>
+      <mode type="locked"/>
+    </settings>
+    <object id="20" type="button" x="0" y="0" r="0" s="264.15485605734773" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>962.2377622377622</w>
+        <h>600</h>
+      </size>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+      <layout>
+        <frametype value="OVERVIEW"/>
+      </layout>
+    </object>
+    <object id="0" type="button" x="-1031.8837028332064" y="377.72454052821627" r="0" s="81.47702273717562" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="3" type="button" x="-73907.37250476833" y="25521.296735306878" r="0" s="51.70217138766689" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="4" type="shape" x="-43287.50196549665" y="17956.554865437134" r="-8.827870066716853" s="169.03647650592146" class="line3">
+      <geom type="arrow">
+        <sp>60.318608383180695 -5.833236783071967</sp>
+        <ep>-60.31860838318069 -5.833236783071997</ep>
+        <b>-11.666473566143964</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="5" type="button" x="-55730.97541131845" y="-34150.1798054906" r="0" s="37.06861183343677" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="6" type="button" x="66788.91401543756" y="5437.905069586814" r="0" s="45.404364858596125" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="7" type="shape" x="-37305.931133175196" y="-23270.965351792493" r="-151.75574892919897" s="169.03647650592103" class="line3">
+      <geom type="arrow">
+        <sp>-31.786658243000566 0</sp>
+        <ep>31.786658243000566 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="8" type="shape" x="41055.285765408014" y="13277.916754794533" r="-177.0569971524504" s="169.03647650592225" class="line3">
+      <geom type="arrow">
+        <sp>44.442415108061475 7.338596070382925</sp>
+        <ep>-44.44241510806148 7.338596070382915</ep>
+        <b>14.67719214076584</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="9" type="button" x="40396.99244912196" y="-42478.03264407207" r="0" s="33.66611268340032" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="10" type="shape" x="27273.35035205751" y="-28411.668331925026" r="132.99171862535846" s="120.7403403613723" class="line3">
+      <geom type="arrow">
+        <sp>30 0</sp>
+        <ep>-30 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="27" type="text" x="40278.97389560788" y="-49222.97823754505" r="0" s="74.21939427410739" class="strong">
+      <height>28.8</height>
+      <width>220.4993900181616</width>
+      <p align="center">
+        <text><![CDATA[Software Overview]]></text>
+      </p>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+      </meta>
+      <layout>
+        <layout-element role="title" parent-id="9"/>
+      </layout>
+    </object>
+    <object id="28" type="text" x="38513.24894746826" y="-44923.93465797888" r="0" s="42.82421588841546" class="body">
+      <height>93.168</height>
+      <width>390.9237784827681</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[1 PWM out (trigger)]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[1 DIn (echo)]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[8 DOut]]></text>
+      </p>
+      <layout>
+        <layout-element role="body" parent-id="9"/>
+      </layout>
+    </object>
+    <object id="1_30863873" type="textwithplaceholder" x="23468.625396799795" y="48565.41258093606" r="0" s="369.59859311639514" class="head">
+      <placeholder text="Click to add Title" x="-164.35" y="-14.2" align="left" width="328.7878222131714"/>
+    </object>
+    <object id="2_30863873" type="text" x="66629.7463231583" y="-3658.7783983690933" r="0" s="100.09722503148254" class="strong">
+      <height>28.8</height>
+      <width>220.4993900181616</width>
+      <p align="center">
+        <text><![CDATA[In the pipeline]]></text>
+      </p>
+      <meta>
+        <parentTemplate>explain-a-topic-white</parentTemplate>
+      </meta>
+      <layout>
+        <layout-element role="title" parent-id="6"/>
+      </layout>
+    </object>
+    <object id="136" type="image" x="74000.95" y="9879.55" r="0" s="0.8727270703916971">
+      <source w="1503" h="1717" bt="669.4" bl="1419.9">643187119<url>643187119.swf</url></source>
+      <sourceUrl>x.swf</sourceUrl>
+    <resource><id>643187119</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/8/a/3ab8f3e014b16cf7d3bd0399fd107aeb93061.swf</url></resource></object>
+    <object id="3_30863873" type="text" x="64069.40000000001" y="1758.75" r="0" s="57.75559362217747" class="body">
+      <height>93.168</height>
+      <width>390.9237784827681</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Multiple modes]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Lower power usage]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Pin efficiency]]></text>
+      </p>
+      <layout>
+        <layout-element role="body" parent-id="6"/>
+      </layout>
+    </object>
+    <object id="27_4" type="text" x="8906.143255367278" y="-5329.582069557563" r="0" s="92.22002282435989" class="body">
+      <height>93.168</height>
+      <width>264.68270130377124</width>
+      <p>
+        <text><![CDATA[Sam Mansfield ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[&]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Toan Vuong]]></text>
+      </p>
+      <meta>
+        <notModifiedByUser>from-frame-layout-switcher</notModifiedByUser>
+      </meta>
+      <layout>
+        <layout-element role="body" parent-id="0"/>
+      </layout>
+    </object>
+    <object id="29_4" type="text" x="-1032.9063855618986" y="-16346.99643177657" r="0" s="170.26674325672656" class="strong">
+      <height>57.6</height>
+      <width>233.6024877079713</width>
+      <p align="center">
+        <text><![CDATA[EECS 149]]></text>
+      </p>
+      <p align="center">
+        <text><![CDATA[LED CUBE]]></text>
+      </p>
+      <meta>
+        <notModifiedByUser>from-frame-layout-switcher</notModifiedByUser>
+      </meta>
+      <layout>
+        <layout-element role="title" parent-id="0"/>
+      </layout>
+    </object>
+    <object id="28_4" type="image" x="-16122.553337090934" y="3764.3680630573435" r="-6.439066460346454" s="49.27629369419524">
+      <source w="445" h="493">1004710445<mask x="32" y="0" w="380" h="492"/>
+      <url>1004710445.png</url></source>
+      <sourceUrl>http://0103.static.prezi.com.s3.amazonaws.com/media/1/d/1/62847012be3c08cdd6984133d794a6dd72a0e.png</sourceUrl>
+      <layout>
+        <layout-element role="image" parent-id="0"/>
+      </layout>
+    <resource><id>1004710445</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/d/1/62847012be3c08cdd6984133d794a6dd72a0e.png</url></resource></object>
+    <object id="12" type="text" x="-73907.89166873321" y="11981.05247863191" r="0" s="86.43575865432325" class="strong">
+      <height>28.8</height>
+      <width>233.6024877079713</width>
+      <p align="center">
+        <text><![CDATA[Hardware Overview]]></text>
+      </p>
+      <meta>
+        <notModifiedByUser>from-frame-layout-switcher</notModifiedByUser>
+      </meta>
+      <layout>
+        <layout-element role="title" parent-id="3"/>
+      </layout>
+    </object>
+    <object id="13" type="image" x="-73909.20124563886" y="22490.062554162017" r="0" s="14.334969086323051">
+      <source w="1756" h="1223">1004715391<url>1004715391.png</url></source>
+      <sourceUrl>hardware_cropped.png</sourceUrl>
+    <resource><id>1004715391</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/6/6/692955ad9441779bb5d31f90162ee56f8ea2c.png</url></resource></object>
+    <object id="17" type="button" x="-79420.82600237617" y="38927.87521055654" r="0" s="14.115225359761245" class="circle">
+      <type>circle</type>
+      <size>
+        <w>600.0000000000015</w>
+        <h>600</h>
+      </size>
+      <layout>
+        <layout-element role="child" parent-id="3"/>
+      </layout>
+    </object>
+    <object id="22_4" type="image" x="-79408.46099371264" y="38809.68274895047" r="-7.158355049638709e-16" s="3.9197418424508585">
+      <source w="2048" h="1536">1004752095<mask x="0" y="0" w="2046" h="1536"/>
+      <url>1004752095.jpg</url></source>
+      <sourceUrl>http://0103.static.prezi.com.s3.amazonaws.com/media/f/e/9/49a6c400191edc88bc9dc18579ef8b8958739.jpg</sourceUrl>
+      <layout>
+        <layout-element role="image" parent-id="17"/>
+      </layout>
+    <resource><id>1004752095</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/e/9/49a6c400191edc88bc9dc18579ef8b8958739.jpg</url></resource></object>
+    <object id="23_4" type="textwithplaceholder" x="-79420.21486186114" y="40815.505758263236" r="0" s="17.03362468769937" class="strong">
+      <placeholder text="Click to add caption" x="-153.15" y="-14.4" align="center" width="306.3078079062704"/>
+      <meta>
+        <notModifiedByUser>from-frame-layout-switcher</notModifiedByUser>
+      </meta>
+      <layout>
+        <layout-element role="title" parent-id="17"/>
+      </layout>
+    </object>
+    <object id="19" type="button" x="-68817.46653607642" y="39049.184326439725" r="0" s="10.586419019820932" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <layout>
+        <layout-element role="child" parent-id="3"/>
+      </layout>
+    </object>
+    <object id="21" type="image" x="-68778.36040160128" y="39094.9850694271" r="0" s="3.894595646087597">
+      <source w="2048" h="1536">1004754561<url>1004754561.jpg</url></source>
+      <sourceUrl>sensor.jpg</sourceUrl>
+    <resource><id>1004754561</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/b/e/fbf158d3099bf9e36961f6a30920392a8a6f3.jpg</url></resource></object>
+    <object id="22" type="image" x="-55730.32048365742" y="-34149.99626539765" r="0" s="14.752019374176367">
+      <source w="2048" h="1536">1004783431<url>1004783431.jpg</url></source>
+      <sourceUrl>progress.jpg</sourceUrl>
+    <resource><id>1004783431</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/8/7/7/9d9dae75ef6e00ad34d9675fadbe3c80fc150.jpg</url></resource></object>
+    <object id="24" type="button" x="33998.883934115904" y="-38945.263342420956" r="0" s="3.8996274450012343" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="25" type="text" x="34090.66381630543" y="-40083.24117461933" r="0" s="24.616567784459686" class="strong">
+      <height>28.8</height>
+      <width>-71.184</width>
+      <p>
+        <text><![CDATA[Main Loop]]></text>
+      </p>
+    </object>
+    <object id="26" type="text" x="34001.6651426671" y="-39502.895656936096" r="0" s="8.427904700598997" class="body">
+      <height>31.056000000000004</height>
+      <width>161.26358564694252</width>
+      <p>
+        <text style="italic"><![CDATA[checkDistance()]]></text>
+      </p>
+    </object>
+    <object id="29" type="shape" x="33009.83522771214" y="-38947.52353979639" r="-50.44033203100551" s="4.635347585329448" class="line3">
+      <geom type="arrow">
+        <sp>105.56954811130318 0</sp>
+        <ep>-105.56954811130319 0</ep>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="30" type="text" x="32956.857796933844" y="-39075.51660956872" r="-50.440332031005504" s="4.324847716787108" class="body">
+      <height>31.056000000000004</height>
+      <width>-132.288</width>
+      <p>
+        <text><![CDATA[dist < thesh1]]></text>
+      </p>
+    </object>
+    <object id="31" type="text" x="32631.91993120225" y="-38455.30710265164" r="0" s="4.324847716787108" class="body">
+      <height>31.056000000000004</height>
+      <width>-84.048</width>
+      <p>
+        <text style="italic"><![CDATA[onLed(1)]]></text>
+      </p>
+    </object>
+    <object id="32" type="shape" x="33518.96591046282" y="-38869.222288975376" r="-69.66701986943986" s="4.6353475853294475" class="line3">
+      <geom type="arrow">
+        <sp>87.97659282698218 0</sp>
+        <ep>-87.97659282698218 0</ep>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="33" type="text" x="33439.35" y="-38982.2" r="-69.66701986943986" s="4.324847716787107" class="body">
+      <height>31.056000000000004</height>
+      <width>-132.288</width>
+      <p>
+        <text><![CDATA[dist < thesh2]]></text>
+      </p>
+    </object>
+    <object id="34" type="text" x="33383.30977478415" y="-38389.94870169849" r="0" s="4.32484771678711" class="body">
+      <height>31.056000000000004</height>
+      <width>-84.048</width>
+      <p>
+        <text style="italic"><![CDATA[onLed(2)]]></text>
+      </p>
+    </object>
+    <object id="35" type="shape" x="33814.763491204656" y="-38923.06830224716" r="0" s="0.2578655405157793" class="poly4">
+      <geom type="circle">
+        <r>146.94978781563685</r>
+      </geom>
+    </object>
+    <object id="36" type="shape" x="34058.88650879534" y="-38923.231697752846" r="0" s="0.25786554051577937" class="poly4">
+      <geom type="circle">
+        <r>146.94978781563685</r>
+      </geom>
+    </object>
+    <object id="37" type="shape" x="34278.23650879534" y="-38923.231697752846" r="0" s="0.25786554051577937" class="poly4">
+      <geom type="circle">
+        <r>146.94978781563685</r>
+      </geom>
+    </object>
+    <object id="38" type="shape" x="34684.6302734836" y="-38881.22532324652" r="-116.99263045627004" s="4.635347585329448" class="line3">
+      <geom type="arrow">
+        <sp>92.64808290931026 0</sp>
+        <ep>-92.64808290931026 0</ep>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="39" type="text" x="34505.8" y="-38854.5" r="-116.99263045627005" s="4.324847716787107" class="body">
+      <height>31.056000000000004</height>
+      <width>-132.288</width>
+      <p>
+        <text><![CDATA[dist > thesh7]]></text>
+      </p>
+    </object>
+    <object id="40" type="text" x="34945.6" y="-38390.100000000006" r="0" s="4.32484771678711" class="body">
+      <height>31.056000000000004</height>
+      <width>-84.048</width>
+      <p>
+        <text style="italic"><![CDATA[onLed(8)]]></text>
+      </p>
+    </object>
+    <object id="56" type="button" x="40354.75" y="-38709.95" r="0" s="5.661720757499552" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>794.2</w>
+        <h>452.6528497409327</h>
+      </size>
+    </object>
+    <object id="7_4" type="text" x="40354.57229434764" y="-39660.13638928208" r="0" s="8.399739640106596" class="strong">
+      <height>28.8</height>
+      <width>409.346143553921</width>
+      <p align="center">
+        <text><![CDATA[Ultrasonic sensor]]></text>
+      </p>
+      <layout>
+        <layout-element role="title" parent-id="56"/>
+      </layout>
+    </object>
+    <object id="57" type="shape" x="38667.626104803756" y="-38687.11290552919" r="0" s="2.0408163265306123" class="line5">
+      <geom type="line">
+        <sp>-59.991437869159135 0</sp>
+        <ep>59.991437869159135 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="58" type="shape" x="38790.06849414458" y="-38789.363037708645" r="-89.99999999999997" s="2.0408163265306127" class="line5">
+      <geom type="line">
+        <sp>-50.20688847723477 0</sp>
+        <ep>50.20688847723477 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="59" type="shape" x="38992.43198511546" y="-38789.221153637765" r="-89.99999999999997" s="2.040816326530613" class="line5">
+      <geom type="line">
+        <sp>-50.20688847723477 0</sp>
+        <ep>50.20688847723477 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="60" type="shape" x="38891.19366895433" y="-38891.77264064524" r="0.061868323872834904" s="2.0408163265306127" class="line5">
+      <geom type="line">
+        <sp>-49.50335545689263 0</sp>
+        <ep>49.503355456892635 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="61" type="shape" x="39305.082701580664" y="-38686.69230727553" r="0" s="2.0408163265306127" class="line5">
+      <geom type="line">
+        <sp>-153.1251162305301 0</sp>
+        <ep>153.1251162305301 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="63" type="shape" x="39749.370681203385" y="-38686.271485369434" r="0" s="2.0408163265306127" class="line5">
+      <geom type="line">
+        <sp>-59.991437869159135 0</sp>
+        <ep>59.991437869159135 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="64" type="shape" x="39871.8130705442" y="-38788.52161754889" r="-89.99999999999997" s="2.040816326530613" class="line5">
+      <geom type="line">
+        <sp>-50.20688847723477 0</sp>
+        <ep>50.20688847723477 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="65" type="shape" x="40074.17656151508" y="-38788.37973347802" r="-89.99999999999997" s="2.0408163265306136" class="line5">
+      <geom type="line">
+        <sp>-50.20688847723477 0</sp>
+        <ep>50.20688847723477 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="66" type="shape" x="39972.938245353944" y="-38890.93122048549" r="0.061868323872834904" s="2.040816326530613" class="line5">
+      <geom type="line">
+        <sp>-49.50335545689263 0</sp>
+        <ep>49.503355456892635 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="67" type="shape" x="40386.82727798029" y="-38685.85088711578" r="0" s="2.040816326530613" class="line5">
+      <geom type="line">
+        <sp>-153.1251162305301 0</sp>
+        <ep>153.1251162305301 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="68" type="shape" x="40832.470681203384" y="-38686.02148536945" r="0" s="2.0408163265306127" class="line5">
+      <geom type="line">
+        <sp>-59.991437869159135 0</sp>
+        <ep>59.991437869159135 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="69" type="shape" x="40954.9130705442" y="-38788.271617548904" r="-89.99999999999997" s="2.040816326530613" class="line5">
+      <geom type="line">
+        <sp>-50.20688847723477 0</sp>
+        <ep>50.20688847723477 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="70" type="shape" x="41157.27656151507" y="-38788.129733478025" r="-89.99999999999997" s="2.0408163265306136" class="line5">
+      <geom type="line">
+        <sp>-50.20688847723477 0</sp>
+        <ep>50.20688847723477 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="71" type="shape" x="41056.03824535396" y="-38890.6812204855" r="0.061868323872834904" s="2.040816326530613" class="line5">
+      <geom type="line">
+        <sp>-49.50335545689263 0</sp>
+        <ep>49.503355456892635 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="72" type="shape" x="41469.92727798028" y="-38685.60088711579" r="0" s="2.040816326530613" class="line5">
+      <geom type="line">
+        <sp>-153.1251162305301 0</sp>
+        <ep>153.1251162305301 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="73" type="shape" x="41085.12159068184" y="-39110.358015991435" r="-21.4998555364845" s="2.8571428571428568" class="line1">
+      <geom type="arrow">
+        <sp>-81.70990301223283 0</sp>
+        <ep>81.70990301223284 0</ep>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="74" type="text" x="41823.355709295654" y="-39251.550904561365" r="0" s="3.907697473206829" class="body">
+      <height>31.056000000000004</height>
+      <width>215.83115492487516</width>
+      <p>
+        <text><![CDATA[Hardware controlled]]></text>
+      </p>
+    </object>
+    <object id="75" type="text" x="38802.70954766989" y="-39058.505655263165" r="0" s="6.9419335868649545" class="body">
+      <height>31.056000000000004</height>
+      <width>-71.52</width>
+      <p>
+        <text color="3247103"><![CDATA[Trigger]]></text>
+      </p>
+    </object>
+    <object id="77" type="shape" x="38884.496435458976" y="-38121.714766348654" r="0.0029433122022980937" s="2.0408163265306127" class="line5">
+      <geom type="line">
+        <sp>-160.11063213168424 0</sp>
+        <ep>160.1106321316842 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="78" type="shape" x="39211.46393898088" y="-38224.1816841637" r="-89.99999999999997" s="2.040816326530613" class="line5">
+      <geom type="line">
+        <sp>-50.20688847723477 0</sp>
+        <ep>50.20688847723477 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="79" type="shape" x="39759.077429951765" y="-38224.08980009283" r="-89.99999999999997" s="2.0408163265306136" class="line5">
+      <geom type="line">
+        <sp>-50.20688847723477 0</sp>
+        <ep>50.20688847723477 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="81" type="shape" x="39485.21894241766" y="-38326.59178947897" r="0.012481178297825335" s="2.0408163265306154" class="line5">
+      <geom type="line">
+        <sp>-134.08722606020802 0</sp>
+        <ep>134.08722606020802 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="82" type="shape" x="40031.40241450285" y="-38121.50480207765" r="-4.6108849090344716e-14" s="2.04081632653062" class="line5">
+      <geom type="line">
+        <sp>-133.40537880557062 0</sp>
+        <ep>133.40537880557065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="83" type="shape" x="40303.80357145988" y="-38227.29342433103" r="-90" s="2.0408163265306127" class="line5">
+      <geom type="line">
+        <sp>-51.84781744991944 0</sp>
+        <ep>51.84781744991944 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="84" type="shape" x="40474.27786400251" y="-38333.17595571543" r="2.0632902793133102e-14" s="2.040816326530621" class="line5">
+      <geom type="line">
+        <sp>-83.52017635383123 0</sp>
+        <ep>83.52017635383123 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="85" type="shape" x="40644.557523933676" y="-38227.45650895487" r="-90.00322235742549" s="2.857142857142857" class="line2">
+      <geom type="line">
+        <sp>-36.974313015225185 0</sp>
+        <ep>36.974313015225185 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="86" type="shape" x="40980.63029974124" y="-38121.73452531487" r="0.0005069036304232655" s="2.0408163265306216" class="line5">
+      <geom type="line">
+        <sp>-164.67835309247207 0</sp>
+        <ep>164.67835309247204 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="87" type="shape" x="41316.77389580825" y="-38227.54807546438" r="-90" s="2.040816326530613" class="line5">
+      <geom type="line">
+        <sp>-51.84781744991944 0</sp>
+        <ep>51.84781744991944 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="88" type="shape" x="41603.74195168009" y="-38333.35865228326" r="-7.201986177031692e-14" s="2.0408163265306216" class="line5">
+      <geom type="line">
+        <sp>-140.60618737774521 0</sp>
+        <ep>140.60618737774521 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="89" type="shape" x="39571.93475909931" y="-37902.22709421377" r="5.195734249172042e-14" s="4" class="line3">
+      <geom type="arrow">
+        <sp>-38.78796160570425 0</sp>
+        <ep>38.78796160570424 0</ep>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="90" type="shape" x="39397.86673580345" y="-37902.156548072" r="3.830814224954025e-14" s="4.000000000000001" class="line3">
+      <geom type="arrow">
+        <sp>38.22292118248385 0</sp>
+        <ep>-38.22292118248386 0</ep>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="91" type="shape" x="39560.5746489367" y="-37664.25397656603" r="40.48886030667113" s="2.0408163265306136" class="line1">
+      <geom type="arrow">
+        <sp>-83.42426019524684 -30.354571640819447</sp>
+        <ep>83.42426019524684 -30.354571640819447</ep>
+        <b>60.70914328163889</b>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="92" type="text" x="39999.55" y="-37706.5" r="0" s="6.9419335868649545" class="body">
+      <height>31.056000000000004</height>
+      <width>-64.152</width>
+      <p>
+        <text><![CDATA[Range]]></text>
+      </p>
+    </object>
+    <object id="93" type="text" x="38726.78582722383" y="-38410.85" r="0" s="6.941933586864956" class="body">
+      <height>31.056000000000004</height>
+      <width>-49.68000000000001</width>
+      <p>
+        <text color="3247103"><![CDATA[Echo]]></text>
+      </p>
+    </object>
+    <object id="94" type="shape" x="40841.91101477913" y="-37980.55657621376" r="22.039374384957778" s="2.857142857142857" class="line1">
+      <geom type="arrow">
+        <sp>-73.37963552425298 0</sp>
+        <ep>73.37963552425298 0</ep>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="95" type="text" x="41250.833681694174" y="-37808.55308078834" r="0" s="3.907697473206829" class="body">
+      <height>31.056000000000004</height>
+      <width>-90.55199999999998</width>
+      <p>
+        <text><![CDATA[Interrupt]]></text>
+      </p>
+    </object>
+    <object id="96" type="shape" x="32426.885568836027" y="-39265.419185782644" r="-50.90417845904208" s="4" class="line3">
+      <geom type="arrow">
+        <sp>-165.91367706570904 115.62087206171941</sp>
+        <ep>165.913677065709 115.62087206171941</ep>
+        <b>-231.24174412343882</b>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="97" type="shape" x="32429.803563506015" y="-39095.6503622619" r="-83.58508240660636" s="4" class="line3">
+      <geom type="arrow">
+        <sp>-156.2512370169769 205.34471030462944</sp>
+        <ep>156.2512370169769 205.34471030462944</ep>
+        <b>-410.6894206092589</b>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="98" type="shape" x="35258.10556297845" y="-39093.48490355123" r="64.92924065229009" s="3.9999999999999982" class="line3">
+      <geom type="arrow">
+        <sp>156.22472416093055 85.07877739980412</sp>
+        <ep>-156.2247241609306 85.07877739980407</ep>
+        <b>170.1575547996082</b>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="100" type="shape" x="55921.221258766855" y="9898.69893545988" r="90" s="23.323615160349856" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="101" type="shape" x="57344.50342966765" y="9896.949213604361" r="90" s="23.323615160349853" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="102" type="shape" x="58802.93225812784" y="9898.187501639453" r="90" s="23.323615160349853" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="104" type="shape" x="60117.644500319504" y="9902.324860927762" r="90" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="105" type="shape" x="61540.92667122031" y="9900.57513907224" r="90" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="106" type="shape" x="62999.355499680496" y="9901.813427107332" r="90" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="107" type="shape" x="64390.0445003195" y="9910.52486092776" r="90" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="108" type="shape" x="65813.3266712203" y="9908.775139072239" r="90" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="109" type="shape" x="67271.7554996805" y="9910.013427107331" r="90" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="110" type="shape" x="61593.44466961272" y="8948.795167740009" r="0.05053727515241194" s="23.323615160349856" class="line3">
+      <geom type="line">
+        <sp>243.2280758783818 0</sp>
+        <ep>-243.2280758783818 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="111" type="shape" x="61594.05" y="10853.3" r="0.05053727515234172" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>243.2280758783818 0</sp>
+        <ep>-243.2280758783818 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="112" type="image" x="56585.9" y="9917.85" r="0" s="0.9102374765601885">
+      <source w="985" h="1788" bt="473.5" bl="1585.2">643011249<url>643011249.swf</url></source>
+      <sourceUrl>bulb.swf</sourceUrl>
+    <resource><id>643011249</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/b/7/b6337f95f18578d7d2cbf0054491f8898aa23.swf</url></resource></object>
+    <object id="113" type="image" x="58054.700000000004" y="9917.85" r="0" s="0.9102374765601882">
+      <source w="985" h="1788" bt="473.5" bl="1585.2">643011249<url>643011249.swf</url></source>
+      <sourceUrl>bulb.swf</sourceUrl>
+    <resource><id>643011249</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/b/7/b6337f95f18578d7d2cbf0054491f8898aa23.swf</url></resource></object>
+    <object id="114" type="image" x="59471.55" y="9917.85" r="0" s="0.9102374765601882">
+      <source w="985" h="1788" bt="473.5" bl="1585.2">643011249<url>643011249.swf</url></source>
+      <sourceUrl>bulb.swf</sourceUrl>
+    <resource><id>643011249</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/b/7/b6337f95f18578d7d2cbf0054491f8898aa23.swf</url></resource></object>
+    <object id="115" type="image" x="60945.8" y="9917.85" r="0" s="0.9102374765601882">
+      <source w="985" h="1788" bt="473.5" bl="1585.2">643011249<url>643011249.swf</url></source>
+      <sourceUrl>bulb.swf</sourceUrl>
+    <resource><id>643011249</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/b/7/b6337f95f18578d7d2cbf0054491f8898aa23.swf</url></resource></object>
+    <object id="116" type="image" x="62305.2" y="9917.85" r="0" s="0.9102374765601882">
+      <source w="985" h="1788" bt="473.5" bl="1585.2">643011249<url>643011249.swf</url></source>
+      <sourceUrl>bulb.swf</sourceUrl>
+    <resource><id>643011249</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/b/7/b6337f95f18578d7d2cbf0054491f8898aa23.swf</url></resource></object>
+    <object id="117" type="image" x="63667.35" y="9917.85" r="0" s="0.9102374765601882">
+      <source w="985" h="1788" bt="473.5" bl="1585.2">643011249<url>643011249.swf</url></source>
+      <sourceUrl>bulb.swf</sourceUrl>
+    <resource><id>643011249</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/b/7/b6337f95f18578d7d2cbf0054491f8898aa23.swf</url></resource></object>
+    <object id="119" type="shape" x="69647.44589116926" y="9858.11189819382" r="90" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="120" type="shape" x="71070.72806207006" y="9856.362176338298" r="90" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="121" type="shape" x="72529.15689053026" y="9857.60046437339" r="90" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="127" type="shape" x="80997.98013208291" y="9869.42638984127" r="90" s="23.323615160349846" class="line3">
+      <geom type="line">
+        <sp>-41.04513702687065 0</sp>
+        <ep>41.04513702687065 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="128" type="shape" x="75319.66930201514" y="8908.208130473948" r="0.0505372751523979" s="23.32361516034985" class="line3">
+      <geom type="line">
+        <sp>243.2280758783818 0</sp>
+        <ep>-243.2280758783818 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="129" type="shape" x="75320.27463240242" y="10812.712962733938" r="0.05053727515232768" s="23.32361516034984" class="line3">
+      <geom type="line">
+        <sp>243.2280758783818 0</sp>
+        <ep>-243.2280758783818 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="130" type="image" x="70312.12463240241" y="9877.262962733937" r="0" s="0.9102374765601882">
+      <source w="985" h="1788" bt="473.5" bl="1585.2">643011249<url>643011249.swf</url></source>
+      <sourceUrl>bulb.swf</sourceUrl>
+    <resource><id>643011249</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/b/7/b6337f95f18578d7d2cbf0054491f8898aa23.swf</url></resource></object>
+    <object id="131" type="image" x="71780.92463240241" y="9877.262962733937" r="0" s="0.9102374765601878">
+      <source w="985" h="1788" bt="473.5" bl="1585.2">643011249<url>643011249.swf</url></source>
+      <sourceUrl>bulb.swf</sourceUrl>
+    <resource><id>643011249</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/b/7/b6337f95f18578d7d2cbf0054491f8898aa23.swf</url></resource></object>
+    <object id="137" type="image" x="76572" y="9879.549999999997" r="0" s="0.8727270703916968">
+      <source w="1503" h="1717" bt="669.4" bl="1419.9">643187119<url>643187119.swf</url></source>
+      <sourceUrl>x.swf</sourceUrl>
+    <resource><id>643187119</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/8/a/3ab8f3e014b16cf7d3bd0399fd107aeb93061.swf</url></resource></object>
+    <object id="138" type="image" x="79115.75" y="9879.55" r="0" s="0.8727270703916968">
+      <source w="1503" h="1717" bt="669.4" bl="1419.9">643187119<url>643187119.swf</url></source>
+      <sourceUrl>x.swf</sourceUrl>
+    <resource><id>643187119</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/8/a/3ab8f3e014b16cf7d3bd0399fd107aeb93061.swf</url></resource></object>
+    <object id="140" type="shape" x="65065.01233327935" y="12271.625374865773" r="90" s="32.6530612244898" class="line1">
+      <geom type="arrow">
+        <sp>-43.00238275850736 0</sp>
+        <ep>43.00238275850736 0</ep>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="141" type="shape" x="66702.84464311905" y="12332.9192757122" r="89.99999999999994" s="32.65306122448979" class="line1">
+      <geom type="arrow">
+        <sp>41.12525704508544 0</sp>
+        <ep>-41.12525704508544 0</ep>
+        <t>7</t>
+      </geom>
+    </object>
+    <object id="145" type="image" x="66565.85" y="15966.55" r="0" s="19.445458284198665">
+      <source w="600" h="178">1004889605<url>1004889605.gif</url></source>
+      <sourceUrl>http://www.minelab.com/__files/i/5895/SquareWave.gif</sourceUrl>
+    <resource><id>1004889605</id><url>http://0103.static.prezi.com.s3.amazonaws.com/converted/4/c/e/1c36309582e83bd8779e29484ec0a3649b8bb.gif</url></resource></object>
+    <object id="146" type="persistentgroup" x="68458.9376837988" y="13251.414550329107" r="0" s="57.02775128623131">
+      <m o="136"/>
+      <m o="100"/>
+      <m o="101"/>
+      <m o="102"/>
+      <m o="104"/>
+      <m o="105"/>
+      <m o="106"/>
+      <m o="107"/>
+      <m o="108"/>
+      <m o="109"/>
+      <m o="110"/>
+      <m o="111"/>
+      <m o="112"/>
+      <m o="113"/>
+      <m o="114"/>
+      <m o="115"/>
+      <m o="116"/>
+      <m o="117"/>
+      <m o="119"/>
+      <m o="120"/>
+      <m o="121"/>
+      <m o="127"/>
+      <m o="128"/>
+      <m o="129"/>
+      <m o="130"/>
+      <m o="131"/>
+      <m o="137"/>
+      <m o="138"/>
+      <m o="140"/>
+      <m o="141"/>
+      <m o="145"/>
+    </object>
+  </zui-table>
+  <path>
+    <s>
+      <eagle o="20"/>
+    </s>
+    <s>
+      <eagle o="0"/>
+    </s>
+    <s>
+      <eagle o="3"/>
+    </s>
+    <s>
+      <eagle o="13"/>
+    </s>
+    <s>
+      <eagle o="17"/>
+    </s>
+    <s>
+      <eagle o="22_4"/>
+    </s>
+    <s>
+      <eagle o="19"/>
+    </s>
+    <s>
+      <eagle o="21"/>
+    </s>
+    <s>
+      <eagle o="5"/>
+    </s>
+    <s>
+      <eagle o="22"/>
+    </s>
+    <s>
+      <eagle o="9"/>
+    </s>
+    <s>
+      <eagle o="24"/>
+    </s>
+    <s>
+      <eagle o="56"/>
+    </s>
+    <s>
+      <eagle o="6"/>
+    </s>
+    <s>
+      <eagle o="146"/>
+    </s>
+    <s>
+      <eagle o="20"/>
+    </s>
+  </path>
+  <style type="text/css"><![CDATA[
+@font-face
+{
+	src: url('PTSans.keg');
+	fontFamily: body;
+	font-class: body;
+	font-style: normal;
+	font-weight: normal;
+	font-family: PTSans;
+}
+
+@font-face
+{
+	src: url('YanoneKaffeesatz-B.keg');
+	fontFamily: head;
+	font-class: head;
+	font-style: normal;
+	font-weight: bold;
+	font-family: YanoneKaffeesatz;
+}
+
+@font-face
+{
+	src: url('YanoneKaffeesatz.keg');
+	fontFamily: strong;
+	font-class: strong;
+	font-style: normal;
+	font-weight: normal;
+	font-family: YanoneKaffeesatz;
+}
+
+@font-face
+{
+	src: url('PTSans-B.keg');
+	font-style: normal;
+	font-weight: bold;
+	font-family: PTSans;
+}
+
+@font-face
+{
+	src: url('PTSans-I.keg');
+	font-style: italic;
+	font-weight: normal;
+	font-family: PTSans;
+}
+
+@font-face
+{
+	src: url('PTSans-BI.keg');
+	font-style: italic;
+	font-weight: bold;
+	font-family: PTSans;
+}
+
+@font-face
+{
+	src: url('YanoneKaffeesatz-I.keg');
+	font-style: italic;
+	font-weight: normal;
+	font-family: YanoneKaffeesatz;
+}
+
+.line1
+{
+	color: #fff;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+}
+
+.line2
+{
+	color: #ff9f00;
+	gradEndColor: #ff9f00;
+	gradStartColor: #ff9f00;
+}
+
+.line3
+{
+	color: #fff808;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+}
+
+.line4
+{
+	color: #333;
+	gradEndColor: #333;
+	gradStartColor: #333;
+}
+
+.line5
+{
+	color: #000;
+	gradEndColor: #000;
+	gradStartColor: #000;
+}
+
+.poly1
+{
+	borderColor: #fff;
+	borderThickness: 9;
+	gradEndColor: #808080;
+	gradStartColor: #808080;
+}
+
+.poly2
+{
+	borderColor: #fff;
+	borderThickness: 0;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+}
+
+.poly3
+{
+	borderColor: #fff808;
+	borderThickness: 9;
+	gradEndColor: #808080;
+	gradStartColor: #808080;
+}
+
+.poly4
+{
+	borderColor: #fff808;
+	borderThickness: 0;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+}
+
+.poly5
+{
+	borderColor: #000;
+	borderThickness: 9;
+	gradEndColor: #808080;
+	gradStartColor: #808080;
+}
+
+Background
+{
+	gradEnd: #808080;
+	gradStart: #808080;
+}
+
+Grid
+{
+	color: #a6a6a6;
+}
+
+ZArrow
+{
+	borderColor: #fff;
+	borderThickness: -1;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+	lockTintAlpha: 0;
+	thickness: 7;
+}
+
+ZCircle
+{
+	borderAlpha: 1;
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+}
+
+ZCurveLine
+{
+	color: #fff808;
+}
+
+ZFrame.bracket
+{
+	borderColor: #fff;
+	borderThickness: -1;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #fff;
+	thickness: 8;
+}
+
+ZFrame.circle
+{
+	borderColor: #999;
+	borderThickness: 0;
+	gradEndColor: #333;
+	gradStartColor: #333;
+	thickness: 8;
+}
+
+ZFrame.roundrect
+{
+	borderAlpha: 1;
+	borderColor: #fff;
+	borderThickness: -1;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #c5c3c3;
+	radius: 10;
+}
+
+ZLabel
+{
+	lockTintAlpha: 0.15;
+}
+
+ZLabel.body
+{
+	color: #000;
+	fontFamily: body;
+}
+
+ZLabel.body-background
+{
+	background-alpha: 0.9;
+	background-color: #fff;
+	background-padding: 7;
+	background-padding-bottom: 5;
+}
+
+ZLabel.head
+{
+	color: #fff808;
+	fontFamily: head;
+}
+
+ZLabel.head-background
+{
+	background-alpha: 0.9;
+	background-color: #575757;
+	background-padding: 4;
+	background-padding-bottom: 4;
+}
+
+ZLabel.strong
+{
+	color: #fff;
+	fontFamily: strong;
+}
+
+ZLabel.strong-background
+{
+	background-alpha: 0.9;
+	background-color: #7ed02b;
+	background-padding: 4;
+	background-padding-bottom: 4;
+}
+
+ZLine
+{
+	color: #fff808;
+	lockTintAlpha: 0;
+}
+
+ZMarker
+{
+	alpha: 0.3;
+	color: #ffff0d;
+}
+
+ZPath
+{
+	alpha: 1;
+	color: #40abe6;
+	textColor: #fff;
+	thickness: 3;
+}
+
+ZPath Ball.base
+{
+	alpha: 1;
+	fillColor: #40abe6;
+	radius: 12;
+}
+
+ZPath Ball.mid
+{
+	alpha: .5;
+	fillColor: #40abe6;
+	radius: 8;
+}
+
+ZPoly
+{
+	borderAlpha: 1;
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+}
+
+arrow
+{
+	borderColor: #fff;
+	borderThickness: -1;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+}
+
+background
+{
+	gradEnd: #808080;
+	gradStart: #808080;
+}
+
+circle
+{
+	borderAlpha: 1;
+	lockTintAlpha: 0.6;
+	radius: 0;
+	thickness: 100;
+}
+
+frame.bracket
+{
+	borderColor: #fff;
+	borderThickness: -1;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #fff;
+	thickness: 7;
+}
+
+frame.circle
+{
+	borderColor: #999;
+	borderThickness: 0;
+	gradEndColor: #333;
+	gradStartColor: #333;
+	thickness: 8;
+}
+
+frame.rectangle
+{
+	borderColor: #fff;
+	borderThickness: 0;
+	gradEndColor: #000;
+	gradStartColor: #000;
+	radius: 0;
+}
+
+free-line
+{
+	color: #fff808;
+}
+
+free-marker
+{
+	alpha: 0.3;
+	color: #ffff0d;
+}
+
+grid
+{
+	color: #666;
+}
+
+line
+{
+	color: #fff808;
+}
+
+line-arrow.style1
+{
+	color: #fff;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+}
+
+line-arrow.style2
+{
+	color: #c5c3c3;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #c5c3c3;
+}
+
+line-arrow.style3
+{
+	color: #fff808;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+}
+
+line-arrow.style4
+{
+	color: #333;
+	gradEndColor: #333;
+	gradStartColor: #333;
+}
+
+line-arrow.style5
+{
+	color: #000;
+	gradEndColor: #000;
+	gradStartColor: #000;
+}
+
+path-mid-point
+{
+	alpha: .5;
+	fillColor: #40abe6;
+	radius: 8;
+}
+
+path-point
+{
+	alpha: 1;
+	fillColor: #40abe6;
+	radius: 12;
+}
+
+shape
+{
+	borderAlpha: 1;
+	gradEndAlpha: 0.8;
+	gradStartAlpha: 0.7;
+	lockTintAlpha: 0.6;
+	radius: 0;
+	thickness: 100;
+}
+
+shape.style1
+{
+	borderColor: #fff;
+	borderThickness: 0;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+}
+
+shape.style2
+{
+	borderColor: #c5c3c3;
+	borderThickness: 0;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #c5c3c3;
+}
+
+shape.style3
+{
+	borderColor: #fff808;
+	borderThickness: 0;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+}
+
+shape.style4
+{
+	borderColor: #333;
+	borderThickness: 0;
+	gradEndColor: #333;
+	gradStartColor: #333;
+}
+
+shape.style5
+{
+	borderColor: #000;
+	borderThickness: 0;
+	gradEndColor: #000;
+	gradStartColor: #000;
+}
+
+text
+{
+	padding: 1.2;
+}
+
+text.body
+{
+	color: #fff;
+	fontFamily: body;
+}
+
+text.subtitle
+{
+	color: #fff;
+	fontFamily: strong;
+}
+
+text.title
+{
+	color: #fff808;
+	fontFamily: head;
+}
+
+]]></style>
+  <hash>-31042fda</hash>
+<sync><oid>dcktajjul38v</oid><title>eecs-149</title><hash>-31042fda</hash></sync><config>XJ5MEweuCxfJiUKyYb9i0z862o35VFZ6OlwFFcep9saac6XiFzpzQm5jidPPd426JXZGxX7aM72hvbrxoCU95qQEiBBtDk7LQAMRnZJKEga4HCJmyfCmgtZxTkjx5rkvyzq1e4WJR00HPXi+us1dQVPDk3NFIbpKG1MJp2X6t4DRRY4IwOmn1exCgiTtH95vpXJjPn6t7ptsn+DKGyASc+o4j+6eIaYp3o6KIPL9FzfcX982yJFNAx3V8T90s8OG/9X4hzlO7DC9Ip3OEayrhht/lcharNCPQxbUjH63r8QWGB1SBh2ig9o+6H/CNrTyAeAi50nsJS5SVKRKmRPKEA==</config></zuiprezi>
