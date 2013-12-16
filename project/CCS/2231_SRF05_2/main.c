@@ -25,7 +25,7 @@
 #define EXP 5
 
 int i = 0;
-int j = 3;
+int j = 0;
 volatile unsigned int k, l;
 volatile unsigned int *kPtr = &k, *lPtr = &l;
 
@@ -157,35 +157,33 @@ void waitD() {
 
 void prog1() {
 	if (echoPulseCount < BASE) {
-		P1OUT = 0x0;
+		P1OUT = ~0x0;
 	} else if (echoPulseCount < BASE + STEP){
-		P1OUT = 0x1;
+		P1OUT = ~0x1;
 	} else if (echoPulseCount < BASE + STEP * 2) {
-		P1OUT = 0x3;
+		P1OUT = ~0x3;
 	} else if (echoPulseCount < BASE + STEP * 3) {
-		P1OUT = 0x7;
+		P1OUT = ~0x7;
 	} else if (echoPulseCount < BASE + STEP * 4) {
-		P1OUT = 0xF;
+		P1OUT = ~0xF;
 	} else if (echoPulseCount < BASE + STEP * 5) {
-		P1OUT = 0x1F;
+		P1OUT = ~0x1F;
 	} else if (echoPulseCount < BASE + STEP * 6) {
-		P1OUT = 0x3F;
+		P1OUT = ~0x3F;
 	} else if (echoPulseCount < BASE + STEP * 7) {
-		P1OUT = 0x7F;
+		P1OUT = ~0x7F;
 	} else {
-		P1OUT = 0xFF;
+		P1OUT = ~0xFF;
 	}
 	update();
 }
 
 void prog2() {
 	waitR();
-	if (P1OUT == 0x80) {
-		P1OUT = 0;
-	} else if (P1OUT == 0) {
-		P1OUT = 0x1;
+	if (P1OUT == 0) {
+		P1OUT = 0x80;
 	} else {
-		P1OUT = P1OUT << 1;
+		P1OUT = P1OUT >> 1;
 	}
 	update();
 }
